@@ -7,6 +7,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'fatih/vim-go'
 Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 " Settings
