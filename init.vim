@@ -46,7 +46,6 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 autocmd BufRead,BufNewFile *.swift set ft=swift
 autocmd BufRead,BufNewFile {Podfile,Gemfile,Rakefile,Thorfile,Vagrantfile,config.ru,*.rabl,*.podspec,Podfile} set ft=ruby
 autocmd BufRead,BufNewFile *.{jsonify,builder,rabl} set ft=ruby
-autocmd BufRead,BufNewFile *.{md,markdown,txt,rst} call s:setWrapping()
 autocmd BufRead,BufNewFile *.json set ft=javascript
 autocmd BufRead,BufNewFile *.{sass,scss} set ft=sass
 autocmd BufRead,BufNewFile *.{go} set ft=go
