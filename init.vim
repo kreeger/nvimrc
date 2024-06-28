@@ -10,9 +10,21 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'leafgarland/typescript-vim'
 call plug#end()
 
+" Crude night/dark switch
+"
+if strftime("%H") < 6
+  colorscheme Tomorrow-Night
+  set background=dark
+elseif strftime("%H") < 17
+  colorscheme Tomorrow
+  set background=light
+else
+  colorscheme Tomorrow-Night
+  set background=dark
+endif
+
 " Settings
 "
-colorscheme Tomorrow-Night
 set background=dark  " Set some visual options, with dark background
 set number  " Line numbers in the gutter
 set showcmd  " Show partial command in the status line.
